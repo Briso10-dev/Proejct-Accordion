@@ -1,5 +1,8 @@
+import { useState } from "react";
 
 function AccordionItem({ num, title, text }) {
+const  {isOpen, setIsOpen} = useState(false); //definition of state
+
   return (
     <div className="shadow-[0_0_30px_rgba(0,0,0,0.1)] p-5 pr-12 cursor-pointer border-t-[4px] border-b-[4px] transition-all grid grid-cols-[auto_1fr_auto] gap-x-6 gap-y-8 items-center">
       {/* Number */}
@@ -9,10 +12,10 @@ function AccordionItem({ num, title, text }) {
       <p className="text-3xl font-medium">{title}</p>
 
       {/* Icon */}
-      <p className="text-2xl font-medium">-</p>
+      <p className="text-2xl font-medium"> {isOpen ? "-" : "+"} </p>
 
       {/* Text spans from col-start 2 to end (i.e., 2 → 4) */}
-      <p className="col-span-2 col-start-2 text-[1.4rem] leading-relaxed text-[#868e96] pb-4">{text}</p>
+      {isOpen && <p className="col-span-2 col-start-2 text-[1.4rem] leading-relaxed text-[#868e96] pb-4">{text}</p>}
     </div>
   );
 }
