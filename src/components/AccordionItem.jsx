@@ -1,12 +1,17 @@
 import { useState } from "react";
 
 function AccordionItem({ num, title, text }) {
-const  {isOpen, setIsOpen} = useState(false); //definition of state
+const  [isOpen, setIsOpen] = useState(false); //definition of state
+
+    function handleToggle(){
+        setIsOpen((isOpen) => !isOpen);
+    }
 
   return (
-    <div className="shadow-[0_0_30px_rgba(0,0,0,0.1)] p-5 pr-12 cursor-pointer border-t-[4px] border-b-[4px] transition-all grid grid-cols-[auto_1fr_auto] gap-x-6 gap-y-8 items-center">
+    <div onClick={handleToggle}
+        className="shadow-[0_0_30px_rgba(0,0,0,0.1)] p-5 pr-12 cursor-pointer border-t-[4px] border-b-[4px] transition-all grid grid-cols-[auto_1fr_auto] gap-x-6 gap-y-8 items-center">
       {/* Number */}
-      <p className="text-3xl font-medium text-[#ced4da]">{num < 9 ? `0${num +1}` : num +1} </p>
+      <p className="text-3xl font-medium text-[#ced4da]">{num < 9 ? `0${num +1}` : num + 1} </p>
 
       {/* Title */}
       <p className="text-3xl font-medium">{title}</p>
