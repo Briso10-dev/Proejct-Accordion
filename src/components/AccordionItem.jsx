@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AccordionItem({ num, title, text, curOpen, onOpen }) {
+function AccordionItem({ num, title, curOpen, onOpen, children }) {
 const isOpen = num === curOpen
 
     function handleToggle(){
@@ -22,7 +22,7 @@ const isOpen = num === curOpen
       <p className="text-2xl font-medium"> {isOpen ? "-" : "+"} </p>
 
       {/* Text spans from col-start 2 to end (i.e., 2 → 4) */}
-      {isOpen && <p className="col-span-2 col-start-2 text-[1.4rem] leading-relaxed text-[#868e96] pb-4">{text}</p>}
+      {isOpen && <p className="col-span-2 col-start-2 text-[1.4rem] leading-relaxed text-[#868e96] pb-4">{children}</p>}
     </div>
   );
 }
