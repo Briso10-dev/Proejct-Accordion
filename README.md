@@ -1,12 +1,59 @@
-# React + Vite
+# Accordion Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Accordion Component is a simple and functional UI element that allows users to expand and collapse sections of content. This project showcases the functionality of a standard accordion with interactive features, enabling better content management and user engagement.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clickable titles to expand/collapse content.
+- Each section displays a question and corresponding answer.
+- Clean and organized design for a pleasant user experience.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Description |
+|------------|-------------|
+| React.js | For building the user interface |
+| JavaScript | To handle calculations and interactivity | 
+| HTML5 | Structure and semantic markup |
+| TailwindCSS | Utility-first CSS framework for styling |
+
+## Getting Started
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/Briso10-dev/Proejct-Accordion
+
+2. Navigate to the project directory:
+   ´´´bash
+   cd Eat-n-split
+
+3. Install the required dependencies:
+    ´´´bash
+    npm install
+
+4. Start the development server:
+    ´´´bash
+    npm start
+
+Project Structure
+
+    src/: Contains all the React components and logic.
+    public/: Contains the HTML file and any static assets.
+
+## 📸 Screenshots
+
+![Desktop View](./public/screenshot-app.png)
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who helped in building this project
+- Inspiration from modern e-commerce platforms
+- Tailwind CSS community for the excellent documentation
+
+## 👥 Authors
+
+- [@Briso-dev](https://github.com/Briso10-dev) - Frontend Development
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
