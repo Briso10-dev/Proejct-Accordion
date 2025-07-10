@@ -47,7 +47,6 @@ Project Structure
 ## 🙏 Acknowledgments
 
 - Thanks to all contributors who helped in building this project
-- Inspiration from modern e-commerce platforms
 - Tailwind CSS community for the excellent documentation
 
 ## 👥 Authors
