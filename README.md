@@ -24,15 +24,15 @@ The Accordion Component is a simple and functional UI element that allows users 
    git clone https://github.com/Briso10-dev/Proejct-Accordion
 
 2. Navigate to the project directory:
-   ´´´bash
+   ```bash
    cd Eat-n-split
 
 3. Install the required dependencies:
-    ´´´bash
+    ```bash
     npm install
 
 4. Start the development server:
-    ´´´bash
+    ```bash
     npm start
 
 Project Structure
